@@ -3,17 +3,103 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/parallax.min.js"></script>
+		<style>
+			div.box {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		</style>
 	</head>
 	<body>
 		<section class="hero is-dark is-bold">
 			<div class="hero-body">
 				<div class="container">
 					<h1 class="title">
-						github/mcrocks999
+						<a href="https://github.com/mcrocks999">github/mcrocks999</a>
 					</h1>
-					<h2 class="subtitle">
-						oki
+					<h2 id="subtitle" class="subtitle">
+						clever subtitle goes here
 					</h2>
+					<script>
+						var subtitles = ['clever subtitle goes here','ayy','oh ok'];
+						document.getElementById('subtitle').innerHTML = subtitles[Math.floor(Math.random()*subtitles.length)];
+					</script>
+				</div>
+			</div>
+		</section>
+		<section class="parallax-window" data-parallax="scroll" data-image-src="img/one.jpg" style="height:300px"></section>
+		<section class="hero is-light is-bold">
+			<div class="hero-body">
+				<div class="container">
+					<h2 class="title">Projects</h2>
+					<div class="columns">
+						<div class="column">
+							<div class="box">
+								<a href="#">
+									<img src="img/project_74.png" class="image is-69by9" style="border-radius:7px">
+									<h3 class="title is-3">@74</h3>
+								</a>
+								<h5 class="subtitle is-5">Discord bot</h5>
+							</div>
+						</div>
+						<div class="column">
+							<div class="box">
+								<a href="https://www.npmjs.com/package/furaffinity">
+									<img src="img/project_fa-node.png" class="image is-69by9" style="border-radius:7px">
+									<h3 class="title is-3">FA NodeJS Wrapper</h3>
+								</a>
+								<h5 class="subtitle is-5"><a href="furaffinity.net">FurAffinity</a> wrapper for NodeJS</h5>
+							</div>
+						</div>
+						<div class="column">
+							<div class="box">
+								<a href="https://github.com/mcrocks999/nodecat">
+									<img src="img/project_nodecat.png" class="image is-69by9" style="border-radius:7px">
+									<h3 class="title is-3">NodeCat</h3>
+								</a>
+								<h5 class="subtitle is-5">cat generator made with lwip</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="parallax-window" data-parallax="scroll" data-image-src="img/two.jpg" style="height:300px"></section>
+		<section class="hero is-light is-bold">
+			<div class="hero-body">
+				<div class="container">
+					<h2 class="title">Old Projects</h2>
+					<div class="columns">
+						<div class="column">
+							<div class="box">
+								<a href="https://github.com/mcrocks999/JavaText--">
+									<img src="img/old_project_javatext.png" class="image is-69by9" style="border-radius:7px">
+									<h3 class="title is-3">JavaText</h3>
+								</a>
+								<h5 class="subtitle is-5">text editor made in Java</h5>
+							</div>
+						</div>
+						<div class="column">
+							<div class="box">
+								<a href="https://github.com/mcrocks999/HelixPyroOS">
+									<img src="img/old_project_os.gif" class="image is-69by9" style="border-radius:7px">
+									<h3 class="title is-3">HelixOS</h3>
+								</a>
+								<h5 class="subtitle is-5">C# Operating System made with Cosmos</h5>
+							</div>
+						</div>
+						<div class="column">
+							<div class="box">
+								<a href="https://github.com/mcrocks999/isup">
+									<img src="img/old_project_isup.png" class="image is-69by9" style="border-radius:7px">
+									<h3 class="title is-3">Isup?</h3>
+								</a>
+								<h5 class="subtitle is-5">website checker made in PHP</h5>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
